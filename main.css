@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Space+Mono:400,700&display=swap");
+html,body{
+  height: 100%;
+}
+body{
+  margin:0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #939caa; /*dim grey*/
+}
+
+h1,h2,h3,h4,h5,h6{
+
+}
+.home-image{
+  color: white;
+}
+h1{
+  font-weight: bold;
+  font-family: "Space Mono", monospace;
+}
+.conatiner-flex{
+  overflow: hidden;
+}
+
+.scootin:hover{
+  outline: none;
+  color: #fcb72b;
+  background-color: transparent;
+  border-color: #fcb72b;
+}
+/*Styling for resolution of large devices like laptops and desktops*/
+  @media (min-width: 768px) and (max-width: 1440px) {
+    nav{
+      margin:0;
+      height: 100px;
+      border-bottom: 1px solid grey;
+      font-family: "Space Mono", monospace;
+    }
+.navbar-item{
+  padding: 20px;
+
+}
+.logo{
+  margin-left: 10px;
+  float: left;
+  margin-right: 30px;
+}
+ul{
+  list-style-type: none;
+}
+a{
+color: #939caa; /*dim grey*/
+}
+a:hover{
+  color:#FCB72B;
+  text-decoration: none;
+}
+.tabs li {
+  padding-top: 12px;
+  font-size: 65%;
+  font-weight: bold;
+  display: inline;
+  float: left;
+  margin: 5px;
+  padding-right: 8px;
+}
+.scootin{
+  font-family: "Space Mono", monospace;
+  height: 53px;
+  width: 180px;
+  text-align: center;
+  float: right;
+  margin-right: 3%;
+  background-color : #FCB72B;
+  color: white;
+  font-size: 65%;
+  font-weight: bold;
+  border : 3px solid #FCB72B;
+  margin-top: -35px;
+  padding: 0;
+}
+.sidebar , .sidebar-container{
+  display: none;
+}
+
+
+
+}
+@media (min-width:1024px) and (max-width: 1440px) {
+.home-image{
+  background-image: url("assets/images/home-hero-desktop.jpg");
+  background-size: cover;
+  height: 650px;
+    }
+    #home-heading{
+      padding-top: 12%;
+      width: 650px;
+      padding-left: 7%;
+    }
+    #home-head{
+      font-size: 235%;
+    }
+    #home-text{
+      font-size: 64%;
+      padding-top: 3%;
+      width: 600px;
+      padding-left: 15%;
+    }
+    #home-line{
+      position: relative;
+      top:80px;
+      left:-80px;
+    }
+    #home-arrow{
+      position: absolute;
+      width: 447px;
+      height: 138px;
+      z-index: 0;
+      right: 250px;
+      margin-top: -10px;
+    }
+    .circles{
+      width: 234px;
+      height: 63px;
+      float: right;
+      padding-top: 50px;
+      margin-right: -40px;
+    }
+    .scoot-button{
+      position: absolute;
+      height: 53px;
+      width: 180px;
+      margin-top: 70px;
+      margin-left: 220px;
+    }
+  }
+@media (min-width:767.98px) and (max-width: 1023.98px) {
+  .home-image{
+    background-image: url("assets/images/home-hero-tablet.jpg");
+    background-size: cover;
+    height: 650px;
+      }
+
+
+    .conatiner-flex{
+      text-align: center;
+      margin: auto;
+        width: 100%;
+        display: block;
+    }
+    #home-heading{
+      padding-top: 13%;
+      width: 500px;
+      height: 112px;
+      margin: 0 24%;
+    }
+    #home-head{
+      font-size: 225%;
+      line-height: 90%;
+    }
+    #home-text{
+      font-size: 64%;
+      margin-top: 125px;
+      width: 573px;
+      height: 75px;
+      margin: 125px 20%;
+    }
+    #home-line{
+    display: none;
+    }
+    .arrow{
+      float: left;
+    }
+    #home-arrow{
+      position: absolute;
+      width: 447px;
+      height: 138px;
+      top: 600px;
+    }
+    .circles{
+      width: 234px;
+      height: 63px;
+      float: right;
+      padding-top: 100px;
+      margin-right: -40px;
+    }
+    .scoot-button{
+      position: absolute;
+      height: 53px;
+      width: 180px;
+      margin: 10px 42%;
+    }
+  }
+  @media (max-width: 767.97px) {
+    .home-image{
+      background-image: url("assets/images/home-hero-mobile.jpg");
+      background-size: cover;
+      height: 650px;
+        }
+
+    }
+  @media (min-width:600px) and (max-width: 767.97px) {
+    .conatiner-flex{
+      text-align: center;
+      margin: auto;
+        width: 100%;
+
+    }
+    #home-heading{
+      margin-top: 60px;
+      padding-top: 17%;
+      width: 436px;
+      height: 80px;
+      margin-left: 20%;
+    }
+    #home-head{
+      font-size: 165%;
+      line-height: 90%;
+    }
+    #home-text{
+      font-size: 64%;
+      width: 436px;
+      height: 100px;
+      margin: 100px 20% 34px 20%;
+    }
+    #home-line{
+    display: none;
+    }
+    .arrow{
+      float: left;
+    }
+    #home-arrow{
+      position: absolute;
+      width: 447px;
+      height: 138px;
+      top: 440px;
+      margin-left: -30%;
+      margin-right: 30%;
+    }
+    .circles{
+    display: none;
+    }
+    .scoot-button{
+      position: absolute;
+      height: 53px;
+      width: 180px;
+      margin: 0 20%;
+    }
+  }
+@media (max-width:599.98px){
+  .conatiner-flex{
+    text-align: center;
+    margin: auto;
+      width: 100%;
+
+  }
+  #home-heading{
+    padding-top: 25%;
+    width: 436px;
+    height: 80px;
+    margin: 60px 7% 0px 7%;
+  }
+  #home-head{
+    font-size: 165%;
+    line-height: 90%;
+  }
+  #home-text{
+    font-size: 64%;
+    width: 380px;
+    height: 100px;
+    margin: 100px 10% 34px 10%;
+  }
+  #home-line{
+  display: none;
+  }
+  .arrow{
+    float: left;
+  }
+  #home-arrow{
+    position: absolute;
+    width: 447px;
+    height: 138px;
+    top: 440px;
+    margin-left: -58%;
+    margin-right: 30%;
+  }
+  .circles{
+  display: none;
+  }
+  .scoot-button{
+    position: absolute;
+    height: 53px;
+    width: 180px;
+    margin: 0 5%;
+  }
+}
+/*Styling for resolution of small devices like phones and tablets*/
+@media (max-width: 767.98px) {
+  .navbar-item{
+    display: none;
+  }
+  .sidebar-container{
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background: white;
+    display: block;
+    height: 70px;
+    width: 100%;
+  }
+  /* The sidebar menu */
+  .sidebar {
+    height: calc(100% - 70px); /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed;
+    top: 70px;
+    float: left;
+    text-align: left;
+    z-index: 1;
+    background-color: #333A44; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: -20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  #hamburger{
+    float: left;
+    margin-top: -60px;
+    padding: 30px;
+  }
+  .logo{
+    margin-left: 6%;
+    padding:10px;
+  }
+  .close{
+
+    position: absolute;
+    top:2%;
+    right: 5%;
+  }
+  a{
+  color: #fff;
+
+  }
+  a:hover{
+    color:#FCB72B;
+    text-decoration: none;
+  }
+  .tabs  {
+    padding-top: 12px;
+    padding-left: 2.5rem;
+    font-size: 65%;
+    font-weight: bold;
+    margin: 5px;
+    padding-right: 8px;
+    transition: 0.3s;
+  }
+  .scootin{
+    position: absolute;
+    bottom: 0;
+    height: 53px;
+    width: 180px;
+    text-align: center;
+    margin: 2rem 0 2rem 2.5rem;
+    background-color : #FCB72B;
+    color: white;
+    font-size: 65%;
+    font-weight: bold;
+    border : 3px solid #FCB72B;
+    padding: 0;
+  }
+}
