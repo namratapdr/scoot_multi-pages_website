@@ -165,7 +165,7 @@ a:hover{
       margin-top: 125px;
       width: 573px;
       height: 75px;
-      margin: 125px 20%;
+      margin: 125px 20% 50px  20%;
     }
     #home-line{
     display: none;
@@ -183,7 +183,7 @@ a:hover{
       width: 234px;
       height: 63px;
       float: right;
-      padding-top: 100px;
+      padding-top: 180px;
       margin-right: -40px;
     }
     .scoot-button{
@@ -369,5 +369,81 @@ a:hover{
     font-weight: bold;
     border : 3px solid #FCB72B;
     padding: 0;
+  }
+}
+
+.steps {
+  width: 100%;
+  height: 630px;
+  background-color: white;
+
+}
+.step_copy p {
+  font-size: 65%;
+}
+.step_copy h4{
+  color: #495567;
+  font-family:"Space Mono", monospace;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+@media (min-width:1190px) and (max-width: 1440px) {
+  .vertical-line {
+    display: none;
+  }
+  .step-container{
+  position: relative;
+  top: 30%;
+  z-index: 0;
+
+  }
+  .steps {
+      display: flex;
+
+  }
+  .step-icons {
+    float: left;
+    display: inline;
+  margin-top: -65px;
+  margin-left: 50px;
+  }
+  .not-first{
+      margin-left: 270px;
+  }
+  .step_copy{
+    position: absolute;
+    top: 60px;
+    width: 350px;
+    height: 100px;
+    margin: 50px 10px 50px 50px;
+  }
+
+  .scooter {
+    margin-left: 300px;
+  }
+  .ride {
+    margin-left: 250px;
+    margin-right: 0px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1189.98px) {
+  .horizontal-line {
+    display: none;
+  }
+  .step-container{
+  position: relative;
+
+
+  }
+  .vertical-line{
+     margin-left: 20%;
+      z-index: 0;
+  }
+  .step-icons {
+    float: left;
+    display: inline;
+  margin-top: -65px;
+  margin-left: 50px;
   }
 }
