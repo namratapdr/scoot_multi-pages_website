@@ -88,7 +88,7 @@ a:hover{
 
 
 }
-@media (min-width:1024px) and (max-width: 1440px) {
+@media (min-width:1024px) and (max-width: 2000px) {
 .home-image{
   background-image: url("assets/images/home-hero-desktop.jpg");
   background-size: cover;
@@ -254,7 +254,6 @@ a:hover{
     text-align: center;
     margin: auto;
       width: 100%;
-
   }
   #home-heading{
     padding-top: 25%;
@@ -309,6 +308,7 @@ a:hover{
     display: block;
     height: 70px;
     width: 100%;
+    z-index: 1;
   }
   /* The sidebar menu */
   .sidebar {
@@ -433,17 +433,61 @@ a:hover{
   }
   .step-container{
   position: relative;
-
-
+  display: flex;
+  justify-content: space-around;
   }
   .vertical-line{
      margin-left: 20%;
-      z-index: 0;
+
   }
+
+    .steps_wrap{
+      float: left;
+    }
   .step-icons {
-    float: left;
-    display: inline;
-  margin-top: -65px;
-  margin-left: 50px;
+  margin:100px 20px 0px -55px;
+  left:0;
+
+  }
+  .step_copy{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    margin: -100px 10px 50px 100px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .horizontal-line {
+    display: none;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .step-container{
+    height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  }
+
+  .step-icons {
+  margin:80px 0;
+
+  }
+  .step-icons img{
+    width: 56px;
+    height: 56px;
+  }
+  .not-first{
+    margin-top: 130px;
+  }
+  .step_copy{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    margin: -40px 10% 50px 10% ;
   }
 }
