@@ -20,10 +20,12 @@ h1{
   font-weight: bold;
   font-family: "Space Mono", monospace;
 }
-.conatiner-flex{
+.home_container{
   overflow: hidden;
 }
+.article_container {
 
+}
 .scootin:hover{
   outline: none;
   color: #fcb72b;
@@ -31,7 +33,7 @@ h1{
   border-color: #fcb72b;
 }
 /*Styling for resolution of large devices like laptops and desktops*/
-  @media (min-width: 768px) and (max-width: 1440px) {
+  @media (min-width: 768px) {
     nav{
       margin:0;
       height: 100px;
@@ -88,11 +90,61 @@ a:hover{
 
 
 }
-@media (min-width:1024px) and (max-width: 2000px) {
+@media (min-width:1500px) {
+  .home-image{
+    background-image: url("assets/images/home-hero-desktop.jpg");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+      }
+      #home-heading{
+        padding-top: 4%;
+        width: 650px;
+        padding-left: 7%;
+      }
+      #home-head{
+        font-size: 235%;
+      }
+      #home-text{
+        font-size: 68%;
+        padding-top: 2%;
+        width: 600px;
+        padding-left: 10%;
+      }
+      #home-line{
+        position: relative;
+        top:80px;
+        left:-80px;
+      }
+      #home-arrow{
+        position: absolute;
+        width: 447px;
+        height: 138px;
+        z-index: 0;
+        right: 250px;
+        margin-top: -10px;
+      }
+      .circles{
+        width: 234px;
+        height: 63px;
+        float: right;
+        padding-top: 50px;
+        margin-right: -40px;
+      }
+      .scoot-button{
+        position: absolute;
+        height: 53px;
+        width: 180px;
+        margin-top: 70px;
+        margin-left: 220px;
+      }
+}
+@media (min-width:1024px) and (max-width:1500px){
 .home-image{
   background-image: url("assets/images/home-hero-desktop.jpg");
   background-size: cover;
   height: 650px;
+  width: 100%;
     }
     #home-heading{
       padding-top: 12%;
@@ -144,7 +196,7 @@ a:hover{
       }
 
 
-    .conatiner-flex{
+    .home_container{
       text-align: center;
       margin: auto;
         width: 100%;
@@ -198,22 +250,24 @@ a:hover{
       background-image: url("assets/images/home-hero-mobile.jpg");
       background-size: cover;
       height: 650px;
+      width: 100%;
         }
 
     }
   @media (min-width:600px) and (max-width: 767.97px) {
-    .conatiner-flex{
+    .home_container{
       text-align: center;
       margin: auto;
         width: 100%;
-
+        display: flex;
+        justify-content: center;
     }
     #home-heading{
       margin-top: 60px;
       padding-top: 17%;
       width: 436px;
       height: 80px;
-      margin-left: 20%;
+      margin-left: 15%;
     }
     #home-head{
       font-size: 165%;
@@ -223,7 +277,7 @@ a:hover{
       font-size: 64%;
       width: 436px;
       height: 100px;
-      margin: 100px 20% 34px 20%;
+      margin: 100px 15% 34px 15%;
     }
     #home-line{
     display: none;
@@ -249,17 +303,19 @@ a:hover{
       margin: 0 20%;
     }
   }
-@media (max-width:599.98px){
-  .conatiner-flex{
+@media  (max-width:599.98px){
+  .home_container{
     text-align: center;
     margin: auto;
       width: 100%;
+    display: flex;
+    justify-content: center;
   }
   #home-heading{
     padding-top: 25%;
     width: 436px;
     height: 80px;
-    margin: 60px 7% 0px 7%;
+    margin: 60px 5% 0px 7%;
   }
   #home-head{
     font-size: 165%;
@@ -269,7 +325,7 @@ a:hover{
     font-size: 64%;
     width: 380px;
     height: 100px;
-    margin: 100px 10% 34px 10%;
+    margin: 100px 10% 50px 10%;
   }
   #home-line{
   display: none;
@@ -293,6 +349,59 @@ a:hover{
     height: 53px;
     width: 180px;
     margin: 0 5%;
+  }
+}
+@media (max-width:434px){
+  .home_container{
+    text-align: left;
+    margin: auto;
+      width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  #home-heading{
+    padding: 20%  0 0 20px;
+    width: 350px;
+    height: 80px;
+    margin: 60px 1% 0px 1%;
+
+  }
+  #home-head{
+    font-size: 100%;
+    line-height: 90%;
+
+  }
+  #home-text{
+    font-size: 64%;
+    width: 300px;
+    height: 100px;
+    margin: 50px 5% 70px 2%;
+    padding: 20px;
+  }
+  #home-line{
+  display: none;
+  }
+  .arrow{
+    float: left;
+  }
+  #home-arrow{
+    position: absolute;
+    width: 447px;
+    height: 138px;
+    top: 440px;
+    margin-left: -78%;
+    margin-right: 30%;
+  }
+  .circles{
+  display: none;
+  }
+  .scoot-button{
+    position: absolute;
+    height: 53px;
+    width: 100px;
+    right: 230px;
+    margin: 30px 50px 30px 50px;
   }
 }
 /*Styling for resolution of small devices like phones and tablets*/
@@ -330,7 +439,7 @@ a:hover{
     padding: 30px;
   }
   .logo{
-    margin-left: 6%;
+    margin-left: 2%;
     padding:10px;
   }
   .close{
@@ -374,7 +483,7 @@ a:hover{
 
 .steps {
   width: 100%;
-  height: 630px;
+  height: 650px;
   background-color: white;
 
 }
@@ -387,7 +496,7 @@ a:hover{
   font-weight: bold;
   margin-bottom: 20px;
 }
-@media (min-width:1190px) and (max-width: 1440px) {
+@media (min-width:1190px) {
   .vertical-line {
     display: none;
   }
@@ -395,7 +504,6 @@ a:hover{
   position: relative;
   top: 30%;
   z-index: 0;
-
   }
   .steps {
       display: flex;
@@ -489,5 +597,87 @@ a:hover{
     width: 80%;
     height: 100px;
     margin: -40px 10% 50px 10% ;
+  }
+}
+.learn-more{
+  font-family: "Space Mono", monospace;
+  height: 53px;
+  width: 180px;
+  text-align: center;
+  background-color : #FCB72B;
+  color: white;
+  font-size: 65%;
+  font-weight: bold;
+  border : 3px solid #FCB72B;
+}
+.learn-more:hover{
+  outline: none;
+  color: #fcb72b;
+  background-color: transparent;
+  border-color: #fcb72b;
+}
+.article_picture{
+  margin-top:150px;
+  width: 455px;
+  height: 455px;
+  border-radius: 50%;
+
+}
+.feature_pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+@media (min-width:1044px) {
+  .article_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 50px;
+  }
+  .feature{
+    height: 655px;
+  }
+
+  .picture1{
+    float: right;
+  }
+
+  .article_copy{
+    margin-top: 200px;
+    text-align: left;
+  }
+  .article1{
+      float: left;
+  }
+  h2{
+    color: #495567;
+    font-family:"Space Mono", monospace;
+    font-weight: bold;
+    font-size: 190%;
+    width: 450px;
+    height: 120px;
+    line-height: 99%;
+  }
+  .article_text{
+    width: 455px;
+    height: 100px;
+    font-size: 70%;
+  }
+  .learn-button{
+    margin: 20px 0px;
+  }
+  .learn1{
+    float: left;
+  }
+  .picture2 , .learn2{
+    float: left;
+  }
+
+  .article2 {
+      float: right;
   }
 }
