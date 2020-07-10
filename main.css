@@ -9,12 +9,22 @@ body{
   color: #939caa; /*dim grey*/
   overflow-x: hidden;
 }
-
-h1,h2,h3,h4,h5,h6{
-
+.body_wrap{
+  overflow: hidden;
+  position: relative;
+}
+.sidebar-container{
+   overflow-x: hidden;
+}
+.patterns{
+  overflow-x: hidden;
+}
+.articles{
+  overflow-x: hidden;
 }
 .steps{
   font-size: 1.5rem;
+  
 }
 .home-image{
   color: white;
@@ -27,9 +37,7 @@ h1{
   overflow: hidden;
   font-size: 1.5rem;
 }
-.article_container {
 
-}
 .scootin:hover{
   outline: none;
   color: #fcb72b;
@@ -41,6 +49,7 @@ nav{
 }
 .sidebar{
   font-size: 1.5rem;
+  
 }
 /*Styling for resolution of large devices like laptops and desktops*/
   @media (min-width: 768px) {
@@ -704,9 +713,7 @@ h2{
     float: right;
      margin-right: 0.5rem;
   }
-  .article_picture{
-   
-  }
+ 
   .article_copy{
     margin-top: 200px;
     text-align: left;
@@ -817,9 +824,7 @@ h2{
   .learn-button{
     margin: 10px 33%;
   }
-  .articles{
- 
-}
+  
    .articles .pattern--circle--group-1 {
          
          position: absolute;
