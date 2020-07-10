@@ -11,136 +11,260 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <style>
         @import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Space+Mono:400,700&display=swap");
-
-        .article_container {
+            ul{
+            list-style-type: none;
+            }
+            a{
+            color: #939caa; /*dim grey*/
+            }
+            a:hover{
+            color:#FCB72B;
+            text-decoration: none;
+            }
+        .call-to-action-container{
+            background: url(assets/patterns/cta-circles.svg);
+            background-position-y: 10rem;
+            background-position-x: 5rem;
+            background-repeat: no-repeat;
             display: flex;
-            flex-wrap: wrap;
-            width: 65%;
-        }
-
-        .articles {
-            display: flex;
-            flex-wrap: wrap;
             width: 100%;
-            margin: auto;
-            justify-content: center;
-            border: 3px solid grey;
+            height: 300px;
+            background-color: #495567;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 10rem 5rem;
+            overflow: hidden;
+             text-align: left;
         }
-
-        .learn-more {
-            font-family: "Space Mono", monospace;
-            height: 53px;
-            width: 180px;
-            text-align: center;
-            background-color: #FCB72B;
-            color: white;
-            font-size: 85%;
+        .call-to-action h2{
+           
+            color: #fff;
+            font-family:"Space Mono", monospace;
             font-weight: bold;
-            border: 3px solid #FCB72B;
+            font-size: 260%;
+            line-height: 85%;
+            width: 400px;
+            height: 110px;
+            margin-top: 2rem;
         }
-
-        .learn-more:hover {
-            outline: none;
-            color: #fcb72b;
-            background-color: transparent;
-            border-color: #fcb72b;
+        .store{
+            float: right;
+            margin: 15px;
         }
+       @media (max-width: 1023.98px){
+           .call-to-action-container{
+               display: flex;
+               -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center;
+                 background-position-x: -20rem;
+           }
+           .call-to-action h2{
+               font-size: 250%;
+           }
+           .store{
+               display: flex;
+               flex-direction: row;
+               margin:1rem;
+               -webkit-box-orient: horizontal;
+           }
+           .store img{
+               max-width: 90%;
+                 height: auto;     
+           }
+           
+       }
+       @media (max-width: 769px){
+           .call-to-action h2{
+               font-size: 200%;
+           }
+           .stores{
+               display: flex;
+               -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+               -webkit-box-orient: horizontal;
+               -webkit-box-direction: normal;
+           }
+           .store img{
+               max-width: 90%;
+                 height: auto;     
+           }
+       }
+         @media (max-width: 400px){
+             .call-to-action h2{
+               font-size: 130%;
+               width: 200px;
+           }
+           .store img{
+               width: 100%;
+                 height: auto;     
+           }
+         }
+       footer{
+           background-color:#333A44 ;
+           overflow: hidden;
+       }
+        @media (min-width:769px){
+       footer{
+        width: 100%;
+        height: 101px;
+        display: flex;
+               -ms-flex-direction: column;
+                flex-direction: column;
+                 -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+               -webkit-box-orient: vertical;
+               -webkit-box-direction: normal;
+               position: relative;
+        
+       }
 
-        .learn-more:active {
-            outline: none;
-        }
-
-        .article_picture {
-            margin-top: 50px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 50px auto auto auto;
-
-        }
-
-        .feature_pic {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            position: relative;
-        }
-
-        .article_copy {
-            margin-top: 20px;
-            width: 100%;
-            text-align: center;
-        }
-
-        h2 {
-            color: #495567;
-            font-family: "Space Mono", monospace;
+       .footer-logo{
+           float: left;
+           padding: 5%;
+       }
+       
+      
+       .footer-tabs li , .socials li{
+           padding-top: 2rem;
             font-weight: bold;
-            font-size: 150%;
-            margin: 20px;
-        }
+            display: inline;
+            float: left;
+            margin: 5px;
+            padding-right: 8px;
+            font-size: 115%;
+       }
+       .footer-tabs{
+           position: absolute;
+           left: 10rem;
+           top:0;
+       }
+       .socials{
+           top:0;
+            position: absolute;
+            right: 0;
+       }
+    }
+       .socials,.footer-tabs {
+           display: flex;
+             -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+       }
+       footer a{
+             color: #939caa; 
+       }
 
-        .article_text {
-            font-family: "Lexend Deca", sans-serif;
-            font-size: 1rem;
-            background-color: white;
-            color: #939caa;
-        }
+       @media (max-width:769px){
+           footer{
+               width: 100%;
+                height: 400px;
+                margin: 0 auto;
+                padding: 6.4rem ;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                justify-content: center;
+           }
+           .footer-logo{
+               padding-left: 15px;
+           }
+           .footer-container{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+             -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+              
+           }
+
+           .socials{
+                margin-top: 3rem;
+           }
+            .socials li{
+         
+            font-weight: bold;
+            display: inline;
+            float: left;
+            margin: 5px;
+            padding-right: 8px;
+           
+       }
+       .footer-tabs{
+           display: block;
+          
+       }
+       .footer-tabs li {
+            font-size: 110%;
+           margin-top: 1.5rem;
+            font-weight: bold;
+           clear: both;
+       }
+       
+    }
     </style>
-    <title>Test articles</title>
+    <title>Test footer</title>
 </head>
 
 <body>
-    <section class="articles">
-        <div class="article_container">
-            <article class="feature">
-                <div class="article_picture picture1">
-                    <img class="feature_pic" src="assets/images/telemetry.jpg" alt="article feature">
-                </div>
-                <div class="article_copy article1">
-                    <h2>Easy to use riding telemetry</h2>
-                    <p class="article_text">The Scoot app is available with riding telemetry. This means it can show you
-                        your average speed, how long you've been using the scooter, your traveling distance, and many
-                        more things all in an easy to use app.</p>
-                    <div class="learn-button learn1">
-                        <button class="learn-more">Learn More</button>
-                    </div>
-                </div>
-
-            </article>
-            <article class="feature">
-                <div class="article_picture picture2">
-                    <img class="feature_pic" src="assets/images/near-you.jpg" alt="article feature">
-                </div>
-                <div class="article_copy article2">
-                    <h2>Coming to a city near you</h2>
-                    <p class="article_text">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be
-                        sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters
-                        loose on 23 cities over the coming year.</p>
-                    <div class="learn-button learn2">
-                        <button class="learn-more">Learn More</button>
-                    </div>
-                </div>
-
-            </article>
-            <article class="feature">
-                <div class="article_picture picture1">
-                    <img class="feature_pic" src="assets/images/payments.jpg" alt="article feature">
-                </div>
-                <div class="article_copy article1">
-                    <h2>Zero hassle payments</h2>
-                    <p class="article_text">Our payment is as easy as one two three. We accept most credit cards and
-                        debit cards. You can also link your PayPal account inside the app. Need to pay later? No
-                        worries! You can defer payment for up to a month.</p>
-                    <div class="learn-button learn1">
-                        <button class="learn-more">Learn More</button>
-                    </div>
-                </div>
-            </article>
+  
+    <section class="call-to-action">
+        <div class="call-to-action-container">
+            <h2>Sign up and Scoot off today</h2>
+        <div class="stores">
+            <div class="store appstore"><img src="assets/icons/app-store.svg" alt="appstore"></div>
+            <div class="store playstore"><img src="assets/icons/google-play.svg" alt="playstore"></div>
         </div>
+        </div>
+        <!--div class="call-to-action-pattern"><img src="assets/patterns/cta-circles.svg" alt="circle patterns"></div-->
     </section>
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo"><a href="#"><img src="assets/logo-white.svg"></a> </img></div>
+            <ul class="footer-tabs">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Location</a>
+                </li>
+                <li>
+                    <a href="#">Careers</a>
+                </li>
+            </ul>
+            <ul class="socials">
+                <li>
+                    <a href="www.facebook.com"><img src="assets/icons/facebook.svg" alt="facebook-icon"></a>
+                </li>
+                <li>
+                    <a href="www.twitter.com"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+                </li>
+                <li>
+                <a href="www.instagram.com"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+                </li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
