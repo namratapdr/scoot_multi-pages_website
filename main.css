@@ -7,6 +7,7 @@ body{
   font-family: "Lexend Deca", sans-serif;
   background-color: white;
   color: #939caa; /*dim grey*/
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -469,7 +470,7 @@ a:hover{
     padding: 30px;
   }
   .logo{
-    margin-left: 2%;
+    margin-top: 5px;
     padding:10px;
   }
   .close{
@@ -685,6 +686,7 @@ h2{
 .article_text{
   font-size: 1.5rem;
 }
+
 @media (min-width:1044px) {
   .article_container{
     display: flex;
@@ -700,8 +702,11 @@ h2{
 
   .picture1{
     float: right;
+     margin-right: 0.5rem;
   }
-
+  .article_picture{
+   
+  }
   .article_copy{
     margin-top: 200px;
     text-align: left;
@@ -722,6 +727,9 @@ h2{
   .learn1{
     float: left;
   }
+  .picture2{
+    margin-left: 0.5rem;
+  }
   .picture2 , .learn2{
     float: left;
   }
@@ -729,6 +737,45 @@ h2{
   .article2 {
       float: right;
   }
+  .articles .pattern--circle--group-1 {
+         
+         position: absolute;
+         top: 100rem;
+         right: 0;
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
+  }
+  .articles .pattern--arrow--group-1 {
+    position: absolute;
+  top: 115rem;
+  right: -3%;
+}
+  .articles .pattern--circle--group-2 {
+         
+         position: absolute;
+         top: 141.5rem;
+         left: 0;
+    -webkit-transform: translateX(-405px);
+            transform: translateX(-405px);
+  }
+  .articles .pattern--arrow--group-2 {
+    position: absolute;
+  top: 142rem;
+  left: -10%;
+}
+.articles .pattern--circle--group-3 {
+         
+         position: absolute;
+         top: 182rem;
+         right: 0;
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
+  }
+  .articles .pattern--arrow--group-3 {
+  position: absolute;
+  top: 186rem;
+  left: 72%;
+}
 }
 
 @media (min-width:769px) and (max-width:1043.98px) {
@@ -770,6 +817,48 @@ h2{
   .learn-button{
     margin: 10px 33%;
   }
+  .articles{
+ 
+}
+   .articles .pattern--circle--group-1 {
+         
+         position: absolute;
+         top: 93rem;
+         right: 0;
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+  }
+  .articles .pattern--arrow--group-1 {
+    position: absolute;
+  top: 110rem;
+  right: -3%;
+}
+  .articles .pattern--circle--group-2 {
+         
+         position: absolute;
+         top: 143rem;
+         left: 0;
+    -webkit-transform: translateX(-335px);
+            transform: translateX(-335px);
+  }
+  .articles .pattern--arrow--group-2 {
+    position: absolute;
+  top: 144rem;
+  left: -12%;
+}
+.articles .pattern--circle--group-3 {
+         
+         position: absolute;
+         top: 195rem;
+         right: 0;
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+  }
+  .articles .pattern--arrow--group-3 {
+  position: absolute;
+  top: 200rem;
+  left: 50%;
+}
 }
 @media (max-width: 768.98px) {
   .article_container{
@@ -815,6 +904,32 @@ h2{
   .learn-button{
     margin: 40px 28%;
   }
+  .articles .pattern--circle--group-1 {
+         
+       display: none;
+  }
+  .articles .pattern--arrow--group-1 {
+    position: absolute;
+  top: 115rem;
+  left: 15%;
+}
+  .articles .pattern--circle--group-2 {
+        display: none;
+  }
+  .articles .pattern--arrow--group-2 {
+    position: absolute;
+  top: 150rem;
+  left: -3%;
+}
+.articles .pattern--circle--group-3 {
+         
+        display: none;
+  }
+  .articles .pattern--arrow--group-3 {
+  position: absolute;
+  top: 198rem;
+  left: 25%;
+}
 }
 @media (max-width: 660px) {
   .article_container{
@@ -877,7 +992,7 @@ h2{
     color: #495567;
     font-family:"Space Mono", monospace;
     font-weight: bold;
-    font-size: 150%;
+    font-size: 120%;
     margin: 20px;
   }
   .article_text{
@@ -888,6 +1003,22 @@ h2{
   }
   .learn-button{
   }
+  .articles .pattern--arrow--group-1 {
+    position: absolute;
+  top: 104.5rem;
+  left: 10%;
+}
+.articles .pattern--arrow--group-2 {
+  position: absolute;
+  top: 146.5rem;
+  right:95%;
+  margin-left:-4%;
+}
+ .articles .pattern--arrow--group-3 {
+  position: absolute;
+  top: 190rem;
+  left: 30%;
+}
 }
 @media (min-width:485.98px) and (max-width:618px) {
   .learn-button{
@@ -912,4 +1043,10 @@ h2{
   h2{
     font-size: 1.2rem;
   }
+  .articles .pattern--arrow--group-2 {
+  position: absolute;
+  top: 146.5rem;
+left: -35%;
+  margin-left:-10%;
+}
 }
