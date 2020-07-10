@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lexend+Deca|Space+Mono:400,700&display=swap");
 html,body{
   height: 100%;
+   scroll-behavior: smooth;
 }
 body{
   margin:0;
@@ -12,6 +13,8 @@ body{
 .body_wrap{
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
+
 }
 .sidebar-container{
    overflow-x: hidden;
