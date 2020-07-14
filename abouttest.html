@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @media (min-width:660px ){
+        .about-articles{
+            margin-top: -50px;
+            margin-right: 80px;
+        } }
+        @media (max-width: 660px) {
+  
+        .about-article{
+            display: flex;
+            flex-wrap: wrap;
+            width:100%;
+            margin: auto;
+            justify-content: center;
+
+        }
+        }
+        @media (min-width: 1044px){
+            .about-articles .picture1{
+                margin-right: 15px;
+            }
+            .about-articles .picture2{
+                margin-left:10px;
+            }
+        .about-articles .pattern--circle--group-1 {
+         
+         position: absolute;
+         top: 9rem;
+         right: 0;
+            -webkit-transform: translateX(410px);
+            transform: translateX(410px);
+            }
+            .about-articles .pattern--arrow--group-1 {
+            position: absolute;
+            top: 26rem;
+            right: -18%;
+            }
+            .about-articles .pattern--circle--group-2 {
+                    
+                    position: absolute;
+                    top: 50rem;
+                    left: 0;
+                -webkit-transform: translateX(-405px);
+                        transform: translateX(-405px);
+            }
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 50rem;
+            left: -9%;
+            }
+           
+        }
+        @media (min-width:769px) and (max-width:1043.98px) {
+             .about-articles .pattern--circle--group-1 {
+         
+         position: absolute;
+         top: 2rem;
+         right: 0;
+            -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+            }
+            .about-articles .pattern--arrow--group-1 {
+            position: absolute;
+            top: 19rem;
+            right: -7%;
+            }
+            .about-articles .pattern--circle--group-2 {
+                    
+                    position: absolute;
+                    top: 53rem;
+                    left: 0;
+                -webkit-transform: translateX(-350px);
+                        transform: translateX(-350px);
+            }
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 53rem;
+            left: -10%;
+            }
+           
+         }
+         
+        
+         @media (max-width: 768.98px) {
+            
+            .about-articles .pattern--arrow--group-1 {
+            position: absolute;
+            top: 19rem;
+            right: -7%;
+            }
+           
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 60rem;
+            left: -2%;
+            }
+           
+         }
+          @media (max-width: 660px) {
+                 .about-articles .pattern--arrow--group-1 {
+            position: absolute;
+            top: 15rem;
+            left : 35%;
+            }
+           
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 42rem;
+            left: -2%;
+            }
+           .about-articles .article_text{
+                    margin-bottom: 0%;
+                }
+                 .about-articles .feature{
+                   height: 600px;
+                }
+          }
+           @media (max-width: 460px) {
+                 .about-articles .pattern--arrow--group-1 {
+            position: absolute;
+            top: 15rem;
+            left : 35%;
+            }
+           
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 42rem;
+            left: -25%;
+            }
+        }
+         @media (max-width: 360px) {
+            .about-articles .pattern--arrow--group-2 {
+                position: absolute;
+            top: 42rem;
+            left: -75%;
+         }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section class="about-articles articles">
+        <div class="article_container">
+            <article class="feature">
+                <div class="article_picture picture1">
+                    <img class="feature_pic" src="assets/images/digital-era.jpg" alt="article feature">
+                </div>
+                <div class="article_copy article1">
+                    <h2>Mobility for the digital era</h2>
+                    <p class="article_text">Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to
+                    scooters at your fingertips.</p>
+                    
+                </div>
+    
+            </article>
+            <article class="feature">
+                <div class="article_picture picture2">
+                    <img class="feature_pic" src="assets/images/better-living.jpg" alt="article feature">
+                </div>
+                <div class="article_copy article2">
+                    <h2>Better urban living</h2>
+                    <p class="article_text">We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the
+                    minimal carbon footprint for each ride.</p>
+                   
+                </div>
+    
+            </article>
+            
+        </div>
+        <div class="patterns">
+            <div class="pattern pattern--circle pattern--circle--group-1">
+                <img src="assets/patterns/circle.svg" alt="circle pattern">
+            </div>
+            <div class="pattern pattern--arrow pattern--arrow--group-1">
+                <img src="assets/patterns/left-upward-arrow.svg" alt="left downward arrow pattern">
+            </div>
+            <div class="pattern pattern--circle pattern--circle--group-2">
+                <img src="assets/patterns/circle.svg" alt="circle pattern">
+            </div>
+            <div class="pattern pattern--arrow pattern--arrow--group-2">
+                <img src="assets/patterns/right-arrow.svg" alt="right arrow pattern">
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>
