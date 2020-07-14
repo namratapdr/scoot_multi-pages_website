@@ -69,8 +69,8 @@ nav{
 ul{
   list-style-type: none;
 }
-a{
-color: #939caa; /*dim grey*/
+ a{
+  color: inherit;
 font-family: "Space Mono", monospace;
 }
 a:hover{
@@ -489,7 +489,6 @@ a:hover{
   }
   a{
   color: #fff;
-
   }
   a:hover{
     color:#FCB72B;
@@ -503,7 +502,9 @@ a:hover{
     margin: 5px;
     padding-right: 8px;
     transition: 0.3s;
+   
   }
+  
   .scootin{
     position: absolute;
     bottom: 0;
@@ -1064,7 +1065,7 @@ left: -35%;
 }
 }
   .call-to-action-container{
-            background: url(assets/patterns/cta-circles.svg);
+            background: url("assets/patterns/cta-circles.svg");
             background-position-y: 10rem;
             background-position-x: 5rem;
             background-repeat: no-repeat;
@@ -1155,9 +1156,12 @@ left: -35%;
           ul{
             list-style-type: none;
             }
-            a{
+            a {
+                font-family: "Space Mono", monospace;
+            }
+             footer a{
             color: #939caa; /*dim grey*/
-            font-family: "Space Mono", monospace;
+            
             }
             a:hover{
             color:#FCB72B;
