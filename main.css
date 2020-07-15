@@ -1119,7 +1119,7 @@ left: -35%;
                -webkit-box-orient: horizontal;
            }
            .store img{
-               max-width: 90%;
+               width: 90%;
                  height: auto;     
            }
            
@@ -1139,8 +1139,8 @@ left: -35%;
                -webkit-box-direction: normal;
            }
            .store img{
-               max-width: 90%;
-                 height: auto;     
+               width: 120px;
+                 height: 50px;     
            }
        }
          @media (max-width: 400px){
@@ -1149,8 +1149,8 @@ left: -35%;
                width: 200px;
            }
            .store img{
-               width: 100%;
-                 height: auto;     
+               width: 90px;
+                 height: 40px;     
            }
          }
           ul{
