@@ -26,7 +26,8 @@
     justify-content: space-between;
         
     }
-    .about-title h1{
+    
+    .about-title  h1{
         color: white;
         font-size: 2.5rem;
         font-family:"Space Mono", monospace;
@@ -55,14 +56,14 @@
     background-size: cover;
   
     }
-    .about-title h1{
+    .about-title  h1{
         font-size: 2.5rem;
         top:4.5rem;
       
     }
     
 }
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
     header{
         height: 160px; 
     margin-top: 4rem;
@@ -78,7 +79,8 @@
         justify-content: center;
         text-align: center;
     }
-    .about-title h1{
+    
+    .about-title  h1{
         position: absolute;
         top:3.5rem;
         left: 41%;
@@ -87,7 +89,7 @@
 }
  
         @media (max-width: 660px) {
-            .about-title{
+            .about-title {
                
                 text-align: center;
             }
