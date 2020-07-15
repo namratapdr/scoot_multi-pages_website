@@ -816,7 +816,7 @@ h2{
     font-size: 65%;
     text-align: center;
   }
-  h2{
+  .article_container  h2{
     text-align: center;
     width: 573px;
     font-size: 220%;
@@ -895,7 +895,7 @@ h2{
     margin-top: 40px;
     font-size: 1.5rem;
   }
-  h2{
+ .article_container  h2{
     text-align: center;
     height: 70px;
     font-size: 130%;
@@ -1003,7 +1003,7 @@ h2{
   .article_text{
     margin-bottom: 10%;
   }
-  h2{
+  .article_container  h2{
     color: #495567;
     font-family:"Space Mono", monospace;
     font-weight: bold;
@@ -1038,7 +1038,7 @@ h2{
   .learn-button{
     margin: 36% auto auto auto;
   }
-  h2{
+  .article_container  h2{
     font-size: 1.2rem;
   }
 }
@@ -1046,7 +1046,7 @@ h2{
   .learn-button{
     margin: 55% auto auto auto;
   }
-  h2{
+ .article_container  h2{
     font-size: 1.2rem;
   }
 }
@@ -1054,7 +1054,7 @@ h2{
   .learn-button{
     margin: 90% auto auto auto;
   }
-  h2{
+  .article_container  h2{
     font-size: 1.2rem;
   }
   .articles .pattern--arrow--group-2 {
@@ -1202,10 +1202,12 @@ left: -35%;
             padding-right: 8px;
             font-size: 115%;
        }
+      
        .footer-tabs{
            position: absolute;
            left: 10rem;
            top:0;
+           
        }
        .socials{
            top:0;

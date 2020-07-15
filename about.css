@@ -26,14 +26,15 @@
     justify-content: space-between;
         
     }
-    .about-title h2{
+    .about-title h1{
         color: white;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         font-family:"Space Mono", monospace;
         font-weight: bold;
         position: absolute;
+        left: 4rem;
         top:4rem;
-        left:4rem;
+       
     }
     .circle{
         width: 234px;
@@ -54,10 +55,10 @@
     background-size: cover;
   
     }
-    .about-title h2{
-        font-size: 3rem;
+    .about-title h1{
+        font-size: 2.5rem;
         top:4.5rem;
-        left:-7rem;
+      
     }
     
 }
@@ -77,16 +78,19 @@
         justify-content: center;
         text-align: center;
     }
-    .about-title h2{
+    .about-title h1{
         position: absolute;
-        top:2.5rem;
-        left: 6%;
+        top:3.5rem;
+        left: 41%;
         font-size: 2.3rem;
     }
 }
  
         @media (max-width: 660px) {
-  
+            .about-title{
+               
+                text-align: center;
+            }
         .about-article{
             display: flex;
             flex-wrap: wrap;
@@ -96,6 +100,7 @@
 
         }
         }
+        
         @media (min-width: 1044px){
             .about-articles .article_picture {
                 margin-top: 4rem;
@@ -199,6 +204,12 @@
                 }
           }
            @media (max-width: 460px) {
+               .about-title h1{
+                    position: absolute;
+                    top:3.5rem;
+                    left: 35%;
+                }
+
                  .about-articles .pattern--arrow--group-1 {
             position: absolute;
             top: 27rem;
@@ -233,7 +244,7 @@
         position: relative;
         clear: both;
        }
-       .values-head h1{
+       .values-head ,.faq-head h1{
             color: #495567;
             font-family:"Space Mono", monospace;
             font-weight: bold;
@@ -339,18 +350,145 @@
             
            }*/
           @media (max-width: 660px) {
-                .values h1{
-                    font-size: 200%;
-                }
+               .values-head ,.faq-head h1{
+                   font-size: 2rem;
+               }
           }
            @media (max-width: 460px) {
+               
                  .value{
                   width: 350px;
                 height: 470px;
+            }
         }
          @media (max-width: 377px) {
+             
            .value{
                 margin: 1rem 1.5rem;
                   width: 80%;
                 height: 480px;
-        }}
+            }
+            }
+
+            /*FAQs div*/
+             .faq h2{
+            margin-top: 2rem;
+       }
+       .faq h3{
+            color: #495567;
+            font-family:"Space Mono", monospace;
+            font-weight: bold;
+            font-size: 1.2rem;
+       }
+       .faq{
+           text-align: center;
+           width: 100%;
+           position: relative;
+       }
+       .faq-container{
+           display: flex;
+           width: 100%;
+       }
+      .accordion {
+           width: 100%;
+       }
+       .card{
+           margin: 1.5rem;
+           border: none;
+       }
+       .card:hover  {
+           background: #FFF4DF;
+       }
+       .card-header{
+           display: flex;
+           flex-direction: row;
+           height: 80px;
+       }
+        .card-header button{
+            position: absolute;
+            left: 87%;
+       }
+       .card-header button svg{
+           fill:  #fcb72b;;
+       }
+       
+        @media (min-width: 1044px){
+           .faq-how , .faq-driving{
+           display: flex;
+           flex-direction: row;
+           width: 90%;
+            }
+       .accordion {
+           width: 100%;
+       }
+        }
+        @media (max-width:1043.98px) {
+            .faq-container{
+                 display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                justify-content: center;
+                }
+            .faq-how , .faq-driving{
+                width: 70%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .accordion {
+                margin-top: -1rem;
+                width: 100%;
+            }
+         }
+         
+        
+        @media (max-width: 768.98px) {
+             
+           }
+          @media (max-width: 660px) {
+              
+              .faq h3{
+                  font-size: 1rem;
+                  margin-right: 2px;
+              }
+              .card-header button{
+            position: fixed;
+            left: 70%;
+       }
+          }
+           @media (max-width: 560px) {
+               .faq-how , .faq-driving{
+                  width: 100%;
+              }
+                .faq h2{
+               font-size: 1.5rem;
+            }
+            .card-header button{
+            position: absolute;
+            left: 87%;
+       }
+        }
+         @media (max-width: 377px) {
+                .faq h2{
+               font-size: 1.5rem;
+            }
+            }
