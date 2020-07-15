@@ -1280,3 +1280,19 @@ left: -35%;
        }
        
     }
+    footer{
+      text-align: center;
+    }
+    .attribution { 
+      font-size: 11px;
+       text-align: center; 
+      position: absolute;
+      bottom: 5px;
+     
+    }
+    @media (min-width: 769.1px){
+      .attribution{
+        left: 35%;
+    }
+    }
+      .attribution a { color:#FCB72B; }
