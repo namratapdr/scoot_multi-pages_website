@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
     margin: 0;
     }
+    /*Styling for the header in desktop mode*/
     header{
         position: relative;
         width: 100%;
@@ -47,7 +48,7 @@
         top:4rem;
         right: -1.5rem;
     }
-
+/*Styling for the header in tablet mode*/
  @media (max-width: 1024px) {
     header{
       
@@ -63,6 +64,7 @@
     }
     
 }
+/*Styling for the header in mobile mode*/
     @media (max-width: 767px) {
     header{
         height: 160px; 
@@ -102,7 +104,7 @@
 
         }
         }
-        
+        /*Styling for the Article section of the about page*/
         @media (min-width: 1044px){
             .about-articles .article_picture {
                 margin-top: 4rem;
@@ -178,6 +180,11 @@
             top: 29rem;
             right: -7%;
             }
+            .careers .pattern--arrow--group-1 {
+            position: absolute;
+            top: 33rem;
+            right : -7%;
+            }
            
             .about-articles .pattern--arrow--group-2 {
                 position: absolute;
@@ -190,6 +197,12 @@
                  .about-articles .pattern--arrow--group-1 {
             position: absolute;
             top: 28rem;
+            left : 33%;
+            }
+
+            .careers .pattern--arrow--group-1 {
+            position: absolute;
+            top: 23rem;
             left : 33%;
             }
            
@@ -216,6 +229,11 @@
             position: absolute;
             top: 27rem;
             left : 35%;
+            }
+            .careers .pattern--arrow--group-1 {
+            position: absolute;
+            top: 22rem;
+            left : 33%;
             }
            
             .about-articles .pattern--arrow--group-2 {

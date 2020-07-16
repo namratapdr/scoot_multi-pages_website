@@ -38,12 +38,13 @@
     }
 }
 
-
+/*header background in desktop mode*/
  header{
      background: url("assets/images/careers-locations-hero-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
  }
+ /*header background in tablet mode*/
  @media (max-width: 1024px) {
     header{
       
@@ -53,6 +54,7 @@
   
     }
 }
+/*header background in mobile mode*/
  @media (max-width: 769px) {
     header{
    background: url("assets/images/careers-location-hero-mobile.jpg");
@@ -61,6 +63,7 @@
     
     }
 }
+/*Styling for the world map section*/
 @media (min-width: 1100px){
     .world-map-container{
         max-width: 111rem;
@@ -138,7 +141,7 @@
     object-fit: contain;
 }
 }
-
+/*Styling for the city listing in mobile mode of the world map */
 .city-list-container{
     margin: 4rem 3rem;
     display: flex;

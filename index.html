@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <title>Scoot home</title>
+    <title>Scoot Home</title>
   </head>
   <body>
     <div class="body_wrap">
+      <!--navbar/sidebar-->
     <nav>
       <div class="navbar-item logo"><a href="index.html"><img src="assets/logo.svg"></a> </img></div>
       <ul class="navbar-item tabs">
@@ -19,13 +20,13 @@
           <a href="about.html">About</a>
         </li>
         <li>
-          <a href="#">Location</a>
+          <a href="location.html">Location</a>
         </li>
         <li>
-          <a href="#">Careers</a>
+          <a href="career.html">Careers</a>
         </li>
       </ul>
-      <button class="navbar-item scootin"><a href="#scoot">Get Scootin</a></button>
+      <a href="#scoot"><button class="navbar-item scootin">Get Scootin</button></a>
     </nav>
     <div class="sidebar-container">
       <div class="logo"><a href="index.html"><img src="assets/logo.svg"></a></div>
@@ -35,24 +36,27 @@
       <div class="close"><img src="assets/icons/close.svg" onclick="closeNav()"></img></div>
       <div class="tabs">
         <p><a href="about.html">About</a></p>
-          <p><a href="#">Location</a></p>
-          <p><a href="#">Careers</a></p>
-          </div>
-    <button class="scootin"><a href="#scoot" >Get Scootin</a></button>
+        <p><a href="location.html">Location</a></p>
+        <p><a href="career.html">Careers</a></p>
       </div>
+      <a href="#scoot"><button class=" scootin">Get Scootin</button></a>
+    </div>
+    <!--header-->
       <div class="home_container">
         <div class="home-image">
+          <div class="home-copy">
           <div id="home-heading"><h1 id="home-head">Scooter sharing made simple</h1></div>
+          
           <div class="line">
-         <img id="home-line" src="assets/patterns/line.svg" alt="horizontal-line">
+            <img id="home-line" src="assets/patterns/line.svg" alt="horizontal-line">
           </div>
-
           <div id="home-text">
             Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
 
           </div>
           <div class="scoot-button">
             <button class="scootin"><a href="#scoot" >Get Scootin</a></button>
+          </div>
           </div>
           <div class="arrow">
             <img id="home-arrow" src="assets/patterns/right-arrow.svg" alt="right-arrow">
@@ -63,6 +67,7 @@
 
         </div>
       </div>
+      <!--steps-->
       <section class="steps">
         <div class="step-container">
 
@@ -111,6 +116,7 @@
           </div>
           </div>
       </section>
+      <!--articles section-->
       <section class="articles">
         <div class="article_container">
           <article class="feature">
@@ -121,7 +127,7 @@
               <h2>Easy to use riding telemetry</h2>
               <p class="article_text">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
               <div class="learn-button learn1">
-                <button class="learn-more"><a href="about.html">Learn More</a></button>
+                <a href="about.html"><button class="learn-more">Learn More</button></a>
               </div>
             </div>
 
@@ -134,7 +140,7 @@
               <h2>Coming to a city near you</h2>
               <p class="article_text">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
               <div class="learn-button learn2">
-                <button class="learn-more"><a href="location.html">Learn More</a></button>
+                <a href="location.html"><button class="learn-more">Learn More</button></a>
               </div>
             </div>
 
@@ -147,7 +153,7 @@
               <h2>Zero hassle payments</h2>
               <p class="article_text">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
               <div class="learn-button learn1">
-                <button class="learn-more"><a href="about.html">Learn More</a></button>
+                <a href="about.html"><button class="learn-more">Learn More</button></a>
               </div>
             </div>
           </article>
@@ -173,49 +179,50 @@
         </div>
         </div>
       </section>
-     
-      <section class="call-to-action" id="scoot">
-        <div class="call-to-action-container">
-          <h2>Sign up and Scoot off today</h2>
-          <div class="stores">
-            <div class="store appstore"><img src="assets/icons/app-store.svg" alt="appstore"></div>
-            <div class="store playstore"><img src="assets/icons/google-play.svg" alt="playstore"></div>
-          </div>
+    <!--Sign Up Today-->
+    <section class="call-to-action" id="scoot">
+      <div class="call-to-action-container">
+        <h2>Sign up and Scoot off today</h2>
+        <div class="stores">
+          <div class="store appstore"><img src="assets/icons/app-store.svg" alt="appstore"></div>
+          <div class="store playstore"><img src="assets/icons/google-play.svg" alt="playstore"></div>
         </div>
-        <!--div class="call-to-action-pattern"><img src="assets/patterns/cta-circles.svg" alt="circle patterns"></div-->
-      </section>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-logo"><a href="index.html"><img src="./assets/logo-white.svg"></a> </img></div>
-          <ul class="footer-tabs">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="location.html">Location</a>
-            </li>
-            <li>
-              <a href="#">Careers</a>
-            </li>
-          </ul>
-          <ul class="socials">
-            <li>
-              <a href="www.facebook.com"><img src="assets/icons/facebook.svg" alt="facebook-icon"></a>
-            </li>
-            <li>
-              <a href="www.twitter.com"><img src="assets/icons/twitter.svg" alt="twitter"></a>
-            </li>
-            <li>
-              <a href="www.instagram.com"><img src="assets/icons/instagram.svg" alt="instagram"></a>
-            </li>
-          </ul>
-          </ul>
-          <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://twitter.com/namratapdr" target="_blank">Namrata Podder</a>.
-          </div>
+      </div>
+      <!--div class="call-to-action-pattern"><img src="assets/patterns/cta-circles.svg" alt="circle patterns"></div-->
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo"><a href="index.html"><img src="./assets/logo-white.svg"></a> </img></div>
+        <ul class="footer-tabs">
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="location.html">Location</a>
+          </li>
+          <li>
+            <a href="career.html">Careers</a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li>
+            <a href="www.facebook.com"><img src="assets/icons/facebook.svg" alt="facebook-icon"></a>
+          </li>
+          <li>
+            <a href="www.twitter.com"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+          </li>
+          <li>
+            <a href="www.instagram.com"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+          </li>
+        </ul>
+        </ul>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://twitter.com/namratapdr" target="_blank">Namrata Podder</a>.
         </div>
-      </footer>
+      </div>
+    </footer>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
