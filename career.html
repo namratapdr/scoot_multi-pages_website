@@ -1,0 +1,367 @@
+<!--career page-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="location.css">
+    <style>
+         .position-copy h4{
+                color: #495567;
+            font-family:"Space Mono", monospace;
+            font-weight: bold;
+           
+            }
+         .values {
+                margin-top: 4rem;
+            }
+            /*Styling for the job postions in tablet and mobile mode*/
+           @media (max-width: 766.99px){
+               .job-positions{
+                   text-align: center;
+                display: flex;
+                display: -ms-flexbox;
+               -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -ms-flex-pack: center;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+               }
+                .job-position{
+                margin-top: 3rem;
+                width: 400px;
+                
+            }
+            .jobPosition{
+                position: relative;
+                background-color: #F2F5F9;
+                width: 100%;
+                padding: 0 2rem;
+                margin-bottom: 1rem;
+                height: 190px;
+                text-align: center;
+                display: flex;
+                display: -ms-flexbox;
+               -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -ms-flex-pack: center;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .jobPosition .message-us {
+               position: relative;
+               bottom: 0;
+               
+           }
+           }
+           
+           @media (max-width: 450px){
+                .job-position{
+                margin-top: 3rem;
+                width: 90%;
+            }
+             .jobPosition{
+                 height: 250px;
+             }
+            }
+            /*Styling of the job position in desktop mode*/
+        @media (min-width:767px ){
+            .job-position{
+                margin-top: 3rem;
+                width: 95%;
+            }
+            .jobPosition{
+                position: relative;
+                background-color: #F2F5F9;
+                width: 100%;
+                padding: 0 2rem;
+                margin-bottom: 1rem;
+                height: 128px;
+                display: flex;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                justify-content: space-between;
+            }
+           .jobPosition .message-us {
+               position: absolute;
+                right: 1rem;
+           }
+        }
+        
+    </style>
+    <title>Scoot Careers</title>
+</head>
+
+<body>
+    <div class="body_wrap">
+        <!--navbar/sidebar-->
+        <nav>
+            <div class="navbar-item logo"><a href="index.html"><img src="assets/logo.svg"></a> </img></div>
+            <ul class="navbar-item tabs">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="location.html">Location</a>
+                </li>
+                <li>
+                    <a href="career.html">Careers</a>
+                </li>
+            </ul>
+        <a href="#scoot"><button class="navbar-item scootin">Get Scootin</button></a>
+        </nav>
+        <div class="sidebar-container">
+            <div class="logo"><a href="index.html"><img src="assets/logo.svg"></a></div>
+            <img id="hamburger" src="assets/icons/hamburger.svg" alt="" onclick="openNav()">
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <div class="close"><img src="assets/icons/close.svg" onclick="closeNav()"></img></div>
+            <div class="tabs">
+                <p><a href="about.html">About</a></p>
+                <p><a href="location.html">Location</a></p>
+                <p><a href="career.html">Careers</a></p>
+            </div>
+        <a href="#scoot"><button class="scootin">Get Scootin</button></a>
+        </div>
+        <!--header for careers-->
+        <header>
+            <div class="about-head">
+                <div class="location-title">
+                    <div id="title">
+                        <h1>Careers</h1>
+                    </div>
+                </div>
+                <div class="circle">
+                    <img class="about-circle" src="assets/patterns/white-circles.svg" alt="right-arrow">
+                </div>
+            </div>
+        </header>
+        <!--articles-->
+        <section class="careers about-articles articles">
+            <div class="article_container">
+                <article class="feature">
+                    <div class="article_picture picture1">
+                        <img class="feature_pic" src="assets/images/join-us.jpg" alt="article feature">
+                    </div>
+                    <div class="article_copy article1">
+                        <h2>Care to join our mission?</h2>
+                        <p class="article_text">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to
+                        provide clean, accessible transport to improve urban living we want to hear from you!</p>
+                        <div class="learn-button learn1">
+                        <a href="#"><button class="learn-more">Say Hello</button></a>
+                        </div>
+                    </div>
+        
+                </article>
+                
+        
+            </div>
+            <div class="careers patterns">
+                <div class="pattern pattern--circle pattern--circle--group-1">
+                    <img src="assets/patterns/circle.svg" alt="circle pattern">
+                </div>
+                <div class="pattern pattern--arrow pattern--arrow--group-1">
+                    <img src="assets/patterns/left-downward-arrow.svg" alt="left downward arrow pattern">
+                </div>
+                
+            </div>
+        </section>
+        <!--our values section-->
+        <section class=" careers values">
+            <div class="values-head">
+                <h1>Why join us?</h1>
+            </div>
+            <div class="value-container">
+                <div class="value">
+                    <div class="value_picture ">
+                        <img class="value_pic" src="assets/images/our-tech.jpg" alt="article feature">
+                        <div class="number">
+                            <h4>01</h4>
+                        </div>
+                    </div>
+        
+                    <div class="value-copy">
+                        <h4>Our tech</h4>
+                        <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully
+                            electric scooters are a
+                            joy to ride!</p>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="value_picture ">
+                        <img class="value_pic" src="assets/images/our-integrity.jpg" alt="article feature">
+                        <div class="number">
+                            <h4>02</h4>
+                        </div>
+                    </div>
+        
+                    <div class="value-copy">
+                        <h4>Our integrity</h4>
+                        <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every
+                            city we serve.
+                        </p>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="value_picture ">
+                        <img class="value_pic" src="assets/images/our-community.jpg" alt="article feature">
+                        <div class="number">
+                            <h4>03</h4>
+                        </div>
+                    </div>
+        
+                    <div class="value-copy">
+                        <h4>Our community</h4>
+                        <p>We support every community we serve. All workers are paid a living wage based on their location and
+                            are Scoot employees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Apply for a job section-->
+       <section class="job-positions">
+        <div class="job-positions-container"> 
+            <div class="job-position">
+                <ul class="job-positions">
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                        <h4>General Manager</h4>
+                        <p>Jakarta, Indonesia</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                            <h4>UI/UX Designer</h4>
+                            <p>Yokohama, Japan</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                            <h4>Blog Content Copywriter</h4>
+                            <p>New York, United States</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                            <h4>Graphic Designer</h4>
+                            <p>New York, United States</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                            <h4>Fleet Supervisor</h4>
+                            <p>Jakarta, Indonesia</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                    <li class="jobPosition">
+                        <div class="position-copy">
+                            <h4>UX Analyst</h4>
+                            <p>London, United Kingdom</p>
+                        </div>
+                        <div class="message-us"><a href="#"><button class="messageUs">Apply</button></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </section>
+        <!--Sign Up Today-->
+        <section class="call-to-action" id="scoot">
+            <div class="call-to-action-container">
+                <h2>Sign up and Scoot off today</h2>
+                <div class="stores">
+                    <div class="store appstore"><img src="assets/icons/app-store.svg" alt="appstore"></div>
+                    <div class="store playstore"><img src="assets/icons/google-play.svg" alt="playstore"></div>
+                </div>
+            </div>
+            <!--div class="call-to-action-pattern"><img src="assets/patterns/cta-circles.svg" alt="circle patterns"></div-->
+        </section>
+        <!--footer-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo"><a href="index.html"><img src="./assets/logo-white.svg"></a> </img></div>
+                <ul class="footer-tabs">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="location.html">Location</a>
+                    </li>
+                    <li>
+                        <a href="career.html">Careers</a>
+                    </li>
+                </ul>
+                <ul class="socials">
+                    <li>
+                        <a href="www.facebook.com"><img src="assets/icons/facebook.svg" alt="facebook-icon"></a>
+                    </li>
+                    <li>
+                        <a href="www.twitter.com"><img src="assets/icons/twitter.svg" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href="www.instagram.com"><img src="assets/icons/instagram.svg" alt="instagram"></a>
+                    </li>
+                </ul>
+                </ul>
+                <div class="attribution">
+                    Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+                    Coded by <a href="https://twitter.com/namratapdr" target="_blank">Namrata Podder</a>.
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+<script>
+    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "270px";
+
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+
+    }
+
+</script>
+</body>
+
+</html>
